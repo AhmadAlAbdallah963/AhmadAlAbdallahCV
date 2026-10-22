@@ -480,3 +480,41 @@ footer p {
 .mb-2 { margin-bottom: 2rem; }
 .mt-1 { margin-top: 1rem; }
 .mt-2 { margin-top: 2rem; }
+
+/* Responsive Image Styling for Graduation Project */
+.project-image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto 2.5rem auto;
+    width: 100%;
+}
+
+.project-img {
+    width: 100%;
+    max-width: 650px; /* حجم مناسب ومصغر للكمبيوتر */
+    height: auto;
+    border-radius: 12px;
+    border: 2px solid var(--accent-color);
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.project-img:hover {
+    transform: scale(1.015);
+    box-shadow: 0 0 30px rgba(100, 255, 218, 0.4);
+}
+
+/* التجاوب مع شاشات الموبايل */
+@media (max-width: 768px) {
+    .project-img {
+        max-width: 95%; /* أخذ عرض مناسب للشاشة على الموبايل */
+    }
+    .project-card {
+        padding: 1.5rem;
+    }
+}
